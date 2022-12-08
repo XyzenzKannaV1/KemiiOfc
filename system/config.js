@@ -1,7 +1,7 @@
 // Owner number
-global.owner = '6281210334790'
+global.owner = '6288980870067'
 // Owner name
-global.owner_name = 'azwan syahidan'
+global.owner_name = 'Kemii Kiw'
 // Database name (Default: database)
 global.database = 'database'
 // Maximum upload file size limit (Default : 100 MB)
@@ -28,9 +28,9 @@ global.timezone = 'Asia/Jakarta'
 // Bot version
 global.version = '2.2.2',
 // Bot name
-global.botname = `© md-bot v${global.version} (Public Bot)`
+global.botname = `© Siesta - Md v${global.version} (Public Bot)`
 // Footer text
-global.footer = 'ꜱɪᴍᴘʟᴇ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ ɴᴇᴏxʀ ッ'
+global.footer = 'Siesta - Multi Device'
 // Global status
 global.status = Object.freeze({
    wait: Func.texted('bold', 'Processed . . .'),
