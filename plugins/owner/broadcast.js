@@ -20,10 +20,10 @@ exports.run = {
             for (let jid of id) {
                await Func.delay(1500)
                await client.sendMessageModify(jid, text, null, {
-                  title: global.botname,
-                  thumbnail: await Func.fetchBuffer('https://telegra.ph/file/aa76cce9a61dc6f91f55a.jpg'),
+                  title: 'ılılılllıılılıllllıılılllıllıılılılllıılılıllllıılılllıllı\nBroadcast Siesta'
+                  thumbnail: await Func.fetchBuffer('https://telegra.ph/file/16457f7260d4ab1bac364.jpg'),
                   largeThumb: true,
-                  url: global.db.setting.link,
+                  url: 'https://wa.me/6288980870067?text=Sewa+Bot+Kak',
                   mentions: command == 'bcgc' ? await (await client.groupMetadata(jid)).participants.map(v => v.id) : []
                })
             }
