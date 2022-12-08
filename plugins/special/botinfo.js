@@ -21,12 +21,12 @@ let info = () => {
    return `This bot was created and developed with the purpose of *learning*.
    
 1. Single Auth
-- https://github.com/neoxr/neoxr-bot
+- https://github.com/XyzenzKannaV1
 
 2. Multi Auth
-- https://github.com/neoxr/neoxr-bot/tree/multi-auth
+- https://github.com/XyzenzKannaV1
 
-65% of the data sent from this bot comes from Rest API: https://api.neoxr.my.id`
+65% of the data sent from this bot comes from Rest API: https://api.kemii.my.id`
 }
 
 const tnc = () => {
