@@ -126,6 +126,7 @@ exports.run = {
                   admin
                }
                return client.sendMessageModify(m.chat, steal(data) + '\n\n' + global.footer, m, {
+                  title: 'Siesta - Multi Device',
                   largeThumb: true,
                   thumbnail: await Func.fetchBuffer(pic)
                })
