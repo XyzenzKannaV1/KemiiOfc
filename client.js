@@ -94,8 +94,8 @@ const connect = async () => {
    client.ev.on('group-participants.update', async (room) => {
       let meta = await (await client.groupMetadata(room.id))
       let member = room.participants[0]
-      let text_welcome = `Thanks +tag for joining into +grup group.`
-      let text_left = `+tag left from this group for no apparent reason.`
+      let text_welcome = `Welcome Kak +tag Jangan Lupa Semangat Yah`
+      let text_left = `+tag Keluar Karna Terlalu Cringe.`
       let groupSet = global.db.groups.find(v => v.jid == room.id)
       try {
          pic = await Func.fetchBuffer(await client.profilePictureUrl(member, 'image'))
@@ -112,6 +112,7 @@ const connect = async () => {
          }
          let txt = (groupSet.text_welcome != '' ? groupSet.text_welcome : text_welcome).replace('+tag', `@${member.split`@`[0]}`).replace('+grup', `${meta.subject}`)
          if (groupSet.welcome) client.sendMessageModify(room.id, txt, null, {
+            title: 'Siesta - Multi Device',
             largeThumb: true,
             thumbnail: pic,
             url: global.db.setting.link
@@ -119,6 +120,7 @@ const connect = async () => {
       } else if (room.action == 'remove') {
          let txt = (groupSet.text_left != '' ? groupSet.text_left : text_left).replace('+tag', `@${member.split`@`[0]}`).replace('+grup', `${meta.subject}`)
          if (groupSet.left) client.sendMessageModify(room.id, txt, null, {
+            title: 'Siesta - Multi Device',
             largeThumb: true,
             thumbnail: pic,
             url: global.db.setting.link
