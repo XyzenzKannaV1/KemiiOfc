@@ -5,9 +5,9 @@ exports.run = {
       client
    }) => {
       client.sendContact(m.chat, [{
-         name: global.owner_name,
+         name: 'Kemii',
          number: global.owner,
-         about: 'Owner & Creator'
+         about: 'Owner Siesta Bot'
       }], m)
    },
    error: false,
